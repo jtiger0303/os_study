@@ -11,3 +11,18 @@
 ### Interrupt ###
 - polling: 중간에 CPU가 계속해서 물어보는 방식(효율성이 떨어지고, 이 것을 보완해주기 위한 방법: interrupt)
 - *Hardware Interrupt*: 연산이 끝났음을 프로세스한테 알려주는 방식(효율성이 좋다)
+
+### Interrupt Handling ###
+- 무엇을 수행하고 있는 지 정보 저장이 필요
+
+## Issue #2 (Protection) ##
+- how to prevent user applications from harming the system?
+
+- What if application accesses disk drives directly?/application executes the HLT instruction?(더 이상 실행할게 없으면-> idle)
+
+- Operating System에 의해서만 수행 가능
+
+### Protected Instructions(a.k.a privileged instructions[ex: HLT]) ###
+1) cannot be done from user mode(application)
+
+2) Direct I/O Access, Accessing system registers, memory state management 수행하려고 할 시에 cpu에 interrupt 발생
