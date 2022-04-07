@@ -26,3 +26,13 @@
 1) cannot be done from user mode(application)
 
 2) Direct I/O Access, Accessing system registers, memory state management 수행하려고 할 시에 cpu에 interrupt 발생
+
+* Kernel mode vs user mode 
+- mode: application이 돌 때는 비트 3/ system call 할 때에는 비트 1
+- protected instruction은 오직 kernel mode에서만 사용 가능
+
+## Issue #3 (Servicing Requests) ##
+1) How to ask services to the OS? (Control을 os로 넘겨준다)
+
+2) User program들은 OS에 요청 필수
+
