@@ -36,3 +36,8 @@
 
 2) User program들은 OS에 요청 필수
 
+- USER: Load, Store, add, INC(파일에서 읽어오고 싶다)->system call[ex) read()]
+- Kernel
+
+
+
